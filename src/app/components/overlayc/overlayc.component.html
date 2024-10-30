@@ -1,0 +1,9 @@
+<!-- overlayc.component.html -->
+<button id="trigger-button" (click)="openOverlay()">Show Overlay</button>
+
+<ng-template #overlayTemplate>
+  <div class="overlay-content">
+    This is an overlay content!
+    <button (click)="closeOverlay()">Close</button>
+  </div>
+</ng-template>
